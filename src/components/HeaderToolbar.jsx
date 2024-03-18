@@ -31,7 +31,7 @@ class HeaderToolbar extends Component {
 
             <NavLink to="/" style={{all: "unset"}}>
               <Typography variant="h4" sx={{fontWeight: 'bold', textAlign: 'center'}}>
-                シ Bitcoin Converter ₿
+               ₿TC Converter
               </Typography>
             </NavLink>
 

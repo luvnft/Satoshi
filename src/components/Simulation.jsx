@@ -1,9 +1,9 @@
 import React from 'react';
-import {NumericFormat} from 'react-number-format';
-import {useTranslation} from "react-i18next";
+import { NumericFormat } from 'react-number-format';
+import { useTranslation } from "react-i18next";
 
-import {Box, Paper, Grid, Typography, Slider, Input, Container} from '@mui/material';
-import {Euro as EuroIcon} from '@mui/icons-material';
+import { Box, Paper, Grid, Typography, Slider, Input, Container } from '@mui/material';
+import { Euro as EuroIcon, Usd as UsdIcon } from '@mui/icons-material'; // Importing UsdIcon
 
 import SimulationStore from "../stores/SimulationStore";
 import InputElement from './InputElement';
@@ -28,7 +28,7 @@ export default function FiatPriceSimulation() {
     }
   };
 
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <React.Fragment>
       <Container maxWidth="sm">
@@ -49,7 +49,7 @@ export default function FiatPriceSimulation() {
             </Typography>
             <Grid container spacing={2} alignItems="center">
               <Grid item>
-                <EuroIcon />
+                <UsdIcon /> {/* Replace EuroIcon with UsdIcon */}
               </Grid>
               <Grid item xs>
                 <Slider
@@ -80,9 +80,9 @@ export default function FiatPriceSimulation() {
 
       <Container maxWidth="sm">
         <Paper>
-          <Grid container justifyContent="center" alignItems="center" sx={{p: 3}}>
-            <InputElement label="€ Euro" endLabel="EUR" value={fiatPrice} onInputChange={onFiatPriceChange} />
-            <Box fontFamily="Monospace" fontWeight="fontWeightBold" fontSize="inherit" sx={{mx: 2, p: 1}}>
+          <Grid container justifyContent="center" alignItems="center" sx={{ p: 3 }}>
+          <InputElement label="USD" endLabel="EUR" value={fiatPrice} onInputChange={onFiatPriceChange} />
+            <Box fontFamily="Monospace" fontWeight="fontWeightBold" fontSize="inherit" sx={{ mx: 2, p: 1 }}>
               <Typography color="secondary" variant="h6">
                 <NumericFormat
                   value={sats}

@@ -4,7 +4,7 @@ import {QueryClient, QueryClientProvider} from 'react-query';
 import {ReactQueryDevtools} from "react-query/devtools";
 import {useTranslation} from "react-i18next";
 
-import GitHubIcon from '@mui/icons-material/GitHub';
+import DiscordIcon from '@mui/icons-material/Discord';
 import {CssBaseline, Container, Box, Paper, Typography, IconButton, Tooltip} from '@mui/material';
 import {ThemeProvider, createTheme} from '@mui/material/styles';
 
@@ -68,9 +68,9 @@ const FooterComponent = () => {
           </Box>
         </Paper>
         <Box textAlign="center">
-          <Tooltip title="GitHub">
-            <IconButton color="inherit" aria-label="Theme" role="link" onClick={() => openInNewTab("https://github.com/DocBrown101/Bitcoin-Satoshi-Converter")}>
-              <GitHubIcon />
+        <Tooltip title="Discord">
+            <IconButton color="inherit" aria-label="Theme" role="link" onClick={() => openInNewTab("https://discord.gg/PNFrxJNG6z")}>
+            <DiscordIcon />
             </IconButton>
           </Tooltip>
         </Box>

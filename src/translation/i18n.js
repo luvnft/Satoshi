@@ -13,6 +13,7 @@ i18n
       de: { translation: de },
     },
     fallbackLng: "en",
+    defaultNS: "translation", // Set default namespace to "translation" for English
     debug: false,
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
