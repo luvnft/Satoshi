@@ -56,23 +56,31 @@ export default function App() {
 }
 
 const FooterComponent = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <footer>
       <Container maxWidth="md">
         <Paper>
           <Box p={2} m={2} textAlign="center">
-            <Typography variant="body1" color="inherit">{t("footer.line1")}</Typography>
-            <Typography variant="body1" color="inherit">{t("footer.line2")}</Typography>
+            <Typography variant="body1" color="inherit">
+              {t("footer.line1")}
+            </Typography>
+            <Typography variant="body1" color="inherit">
+              {t("footer.line2")}
+            </Typography>
           </Box>
         </Paper>
         <Box textAlign="center">
-        <Tooltip title="Discord">
-           <IconButton color="inherit" aria-label="Discord" role="link" onClick={() => openInNewTab("https://discord.gg/PNFrxJNG6z")}>
-        <Discord />
-           </IconButton>
-        </Tooltip>
-
+          <Tooltip title="Discord">
+            <IconButton
+              color="inherit"
+              aria-label="Discord"
+              role="link"
+              onClick={() => openInNewTab("https://discord.gg/PNFrxJNG6z")}
+            >
+              <Discord />
+            </IconButton>
+          </Tooltip>
         </Box>
       </Container>
     </footer>
