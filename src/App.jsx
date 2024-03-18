@@ -3,8 +3,7 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {QueryClient, QueryClientProvider} from 'react-query';
 import {ReactQueryDevtools} from "react-query/devtools";
 import {useTranslation} from "react-i18next";
-
-import { Discord as DiscordIcon } from '@mui/icons-material';
+import { Discord } from '@mui/icons-material';
 import {CssBaseline, Container, Box, Paper, Typography, IconButton, Tooltip} from '@mui/material';
 import {ThemeProvider, createTheme} from '@mui/material/styles';
 
@@ -69,10 +68,11 @@ const FooterComponent = () => {
         </Paper>
         <Box textAlign="center">
         <Tooltip title="Discord">
-            <IconButton color="inherit" aria-label="Discord" role="link" onClick={() => openInNewTab("https://discord.gg/PNFrxJNG6z")}>
-        <DiscordIcon />
-        </IconButton>
-            </Tooltip>
+           <IconButton color="inherit" aria-label="Discord" role="link" onClick={() => openInNewTab("https://discord.gg/PNFrxJNG6z")}>
+        <Discord />
+           </IconButton>
+        </Tooltip>
+
         </Box>
       </Container>
     </footer>
